@@ -51,7 +51,7 @@ class Student:
             self.alive = False
         if self.money < 0:
             print(f"{self.name} не віддав долги, і його більше ніхто не побачив...")
-
+            self.alive = False
     def live(self, day):
         print(f"День №{day} з життя {self.name}")
         print("-"*30)
